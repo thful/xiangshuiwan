@@ -354,5 +354,8 @@ a.more:hover{background-position:-33px -62px ;}
 
 .artical_yellow h1{ text-align: center; color: #FFFFFF; font-size: 20px; line-height: 40px;}
 
-
+.mbx{ float: right; font-size: 14px; color: #888888;}
+.mbx a{ color: #888888;}
+.mbx .color_green{color: #82ab44;}
+.artical_nr p{ line-height: 26px;}
 
