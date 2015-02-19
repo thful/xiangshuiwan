@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 	<head>
 		<meta charset="utf-8" />
 		<title></title>
@@ -14,8 +13,6 @@
           </script>
         <![endif]-->
 	</head>
-
-
 	<body>
 		<div class="body_bk">
 			<div class="head_top">
@@ -666,30 +663,20 @@
 						</p>
 
 					</div>
-
-
-
-
-
 				</div>
 				<div class="blank30"></div>
-
 			</div>
-
-
-
 		</div>
 	</body>
 	<script>
-		 //banner
 		$.fn.scrollfn({
 			type: 1,
+			OverTime: 500,
 			Btnul: "#banner_btn",
 			BannerBtnclass: "current",
 			isAutomatic: 0,
 			ImgBoxChild: "li"
 		}, "#banner_img");
-		 //妈妈什么言
 		$.fn.scrollfn({
 			type: 2,
 			Btnul: "#module01_left_nav",
@@ -697,7 +684,6 @@
 			isAutomatic: 0,
 			ImgBoxChild: "ul"
 		}, "#module01_left_contet");
-		 //走进香水湾
 		$.fn.scrollfn({
 			type: 2,
 			Btnul: "#module02_nav",
@@ -741,8 +727,7 @@
 				$("#head_nav_list>li").removeClass("current")
 				$(this).addClass("current")
 			})
-		})
-	</script>
-	</body>
-
+	})
+ </script>
+ </body>
 </html>

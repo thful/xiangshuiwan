@@ -69,7 +69,7 @@ a.more:hover{background-position:-33px -62px ;}
 .head_nav_content h1{ float: left; width: 262px; height: 82px;}
 .head_nav_list{  float: left; margin-left: 18px; display: inline;}
 .head_nav_list ul li{  float: left; line-height: 82px; padding: 0px 14px; text-align: center;}
-.head_nav_list ul li a{ color: #333;}
+.head_nav_list ul li a{ color: #333; font-size: 16px;}
 .head_nav_list ul li.current ,.head_nav_list ul li:hover{ background:url(../images/bk01.png);}
 .head_nav_list ul li.current a ,.head_nav_list ul li:hover a{ color: #90ba51;}
 
@@ -156,8 +156,8 @@ a.more:hover{background-position:-33px -62px ;}
 
 
 
-.index_left{ width:690px ; float: left;}
-.index_right{ width: 270px; float: left; margin-left: 20px; }
+.index_left{ width:690px ; float: left; overflow: hidden;}
+.index_right{ width: 270px; float: left; margin-left: 20px; display:inline ;overflow: hidden;}
 /**.module03*/
 .module03{  overflow: hidden;}
 .module03_left{ width: 345px ;  overflow: hidden; float: left;}
@@ -250,7 +250,7 @@ a.more:hover{background-position:-33px -62px ;}
 
 .bottom_hqzl{ width: 314px; height: 30px; float: right; margin-top: 8px; margin-right: 50px; display: inline; }
 .input_hqzl_div{ width:200px ; float:left; background: #3b5b02; height: 30px; overflow: hidden;}
-.bottom_hqzl input{ border: none; height: 30px;}
+.bottom_hqzl input{ border: none; height: 30px; line-height: 30px;}
 .btn_hqzl_div{ width:114px; height: 30px; float:left; overflow: hidden; background: #8bdb14; }
 .input_hqzl_div input{ background: #3b5b02; padding-left: 10%; color: #90ba51;}
 .btn_hqzl_div  i{ float: left; margin: 6px 2px;}

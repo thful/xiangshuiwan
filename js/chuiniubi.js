@@ -13,8 +13,7 @@
 				isAutomatic: 0, //自动执行效果的开关
 				deomShownum: 1, //滚动框架内要显示的滚动的子元素的个数 0表示一个默认是0,此阀值是为了处理滚动样式下框架可显示多个时滚动到最后出现                           //的滚动空白，保证最后一个显示的情况下直接滚动回第一个
 				BnanerGeshu: 1, //在滚动效果下的滚动个数，只对拥有左右按钮时有意义 
-				ImgBoxChild: "li", //设置切换框架下的子元素标签 默认形式是li 可以自定义元素类型或者是类名
-//				Textbox: "#textbox" //显示浮层的div   
+				ImgBoxChild: "li" //设置切换框架下的子元素标签 默认形式是li 可以自定义元素类型或者是类名
 			},
 			Options = $.extend({}, Defaults, Options);
 		var i = 1,
