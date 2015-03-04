@@ -22,6 +22,7 @@ h1,h2,h3,h4,h5,h6{ font-weight: normal;}
 .p_absoulte{ position: absolute;}
 .font_bold{ font-weight: bold;}
 .color_000{color: #000;}
+.color_333{color: #333;}
 .color_888{ color: #888;}
 .icon{ display: block; background-image:url(../images/icon.png) ; overflow: hidden; }
 .icon2{display: block; background-image:url(../images/icon2.png) ; overflow: hidden;}
