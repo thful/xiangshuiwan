@@ -7,6 +7,7 @@
 		<link rel="stylesheet" href="css/style.css" />
 		<script type="text/javascript" src="js/jquery-1.7.2.js"></script>
 		<script type="text/javascript" src="js/chuiniubi.js"></script>
+		<script type="text/javascript" src="js/moveup.js"></script>
 		<!--[if IE 6]>
 	    <script  src="js/IE6PNG.js"></script>
           <script>
@@ -44,7 +45,7 @@
 				</div>
 				<div class="widthp100  head_nav_box">
 					<div class="width980  head_nav_content">
-						<h1><a href="#"><img src="images/logo.jpg" width="262" height="82" alt="香水湾"></a></h1>
+						<h1><a href="#"><img src="images/logo.jpg" width="262" height="112" alt="香水湾"></a></h1>
 						<div class="head_nav_list">
 							<ul id="head_nav_list">
 								<li><a href="#">首页</a>
@@ -71,7 +72,8 @@
 				<div class="blank20"></div>
 				<div class="artical_nav width980">
 					<ul>
-						<li> 我能赴美生宝宝吗？</li>
+						<li> <a href="#">我能赴美生宝宝吗？</a>
+						</li>
 						<li><a href="#">最新时讯</a>
 						</li>
 						<li><a href="#" class="current">赴美流程</a>
@@ -130,7 +132,6 @@
 							<a href="javascript:void(0)" class="artical_01_btn_left icon"></a>
 							<a href="javascript:void(0)" class="artical_01_btn_right icon"></a>
 
-
 						</div>
 
 					</div>
@@ -178,7 +179,14 @@
 						</div>
 
 						<div class="artical_left_03_content" id="artical_left_03_content">
-							<ul>
+							<ul id="upul3">
+								<li>
+									<a href="#">
+										<img src="images/baby.jpg" width="54" height="54">
+									</a>
+									<p class="font_size12 color_888"><span class="coloer_yellow">来自北京张女0士的评价：</span> 总体感觉很好。师傅烧的菜味道不错<a href="#" class="coloer_yellow">...........详细</a>
+									</p>
+								</li>
 								<li>
 									<a href="#">
 										<img src="images/baby.jpg" width="54" height="54">
@@ -208,7 +216,7 @@
 									</p>
 								</li>
 							</ul>
-							<ul>
+							<ul id="upul4">
 								<li>
 									<a href="#">
 										<img src="images/baby.jpg" width="54" height="54">
@@ -228,6 +236,13 @@
 										<img src="images/baby.jpg" width="54" height="54">
 									</a>
 									<p class="font_size12 color_888"><span class="coloer_yellow">来自北京张女1士的评价：</span> 总体感觉很好。师傅烧的菜味道不错<a href="#" class="coloer_yellow">...........详细</a>
+									</p>
+								</li>
+								<li>
+									<a href="#">
+										<img src="images/baby.jpg" width="54" height="54">
+									</a>
+									<p class="font_size12 color_888"><span class="coloer_yellow">来自北京张女0士的评价：</span> 总体感觉很好。师傅烧的菜味道不错<a href="#" class="coloer_yellow">...........详细</a>
 									</p>
 								</li>
 								<li>
@@ -336,17 +351,27 @@
 						</div>
 					</div>
 
-
-
-
 				</div>
 				<div class="blank10"></div>
 			</div>
 
-
 		</div>
 		<script>
-			$.fn.scrollfn({
+			 //向上的滚动
+			$.fn.moveup({
+				upul: "#upul3",
+				speed: 2000,
+				overtime: 1000,
+				startnum: 5
+			})
+			 $.fn.moveup({
+					upul: "#upul4",
+					speed: 2000,
+					overtime: 1000,
+					startnum: 5
+				})
+				//
+			 $.fn.scrollfn({
 				type: 0,
 				Btnul: "#artical_01_btn",
 				leftbtn: ".artical_01_btn_left",
@@ -355,7 +380,6 @@
 				isAutomatic: 0,
 				ImgBoxChild: "li"
 			}, "#artical_01");
-
 			$.fn.scrollfn({
 				type: 2,
 				Btnul: "#artical_left_03_nav",
@@ -363,7 +387,6 @@
 				isAutomatic: 0,
 				ImgBoxChild: "ul"
 			}, "#artical_left_03_content");
-
 			$(document).ready(function() {
 				$(".module_img>div").hover(function() {
 					$(this).children("a").css("display", "block")
@@ -379,7 +402,6 @@
 					$(this).addClass("current")
 				})
 				$(".artical_nav>ul>li").last().css("border-right", "none")
-
 			})
 		</script>
 
